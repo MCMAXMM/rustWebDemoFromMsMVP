@@ -21,7 +21,7 @@ impl<'a> Default for HttpResponse<'a>{
 }
 
 impl<'a>  HttpResponse<'a>{
-    fn new(
+   pub fn new(
         status_code:&'a str,
         headers:Option<HashMap<&'a str,&'a str>>,
         body:Option<String>,
